@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
     })
 
-    pwdField.addEventListener('click', function () {
+    pwdField.addEventListener('change', function () {
         if (this.value.trim() !== '') {
             let uname = unameField.value.trim();
             let pwd = pwdField.value.trim();
