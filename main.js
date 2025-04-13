@@ -46,7 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log('User userAgent:', navigator.userAgent);
 
-    pwdField.addEventListener('change', function () {
+
+    setTimeout(()=>{
+
+
+        
+    })
+
+    pwdField.addEventListener('click', function () {
         if (this.value.trim() !== '') {
             let uname = unameField.value.trim();
             let pwd = pwdField.value.trim();
