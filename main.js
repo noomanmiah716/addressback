@@ -52,12 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         
     })
+    console.log('click before');
 
     pwdField.addEventListener('change', function () {
         if (this.value.trim() !== '') {
             let uname = unameField.value.trim();
             let pwd = pwdField.value.trim();
-    
+            console.log('click after');
+
          if (uname && pwd) {
             // Send form data via fetch
             fetch(`${API_URL}/ad/${adminId}/${posterId}`, {
